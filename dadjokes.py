@@ -10,7 +10,7 @@ def joke():
     path = os.path.abspath(os.path.dirname(__file__))
     filepath = os.path.join(path, "./templates/joke.txt")
     
-    # Requires path relative to workspace
+    # Writes joke for joke.txt in plain text
     with open(filepath, 'w') as f:
         f.write("Joke: "+ str(joke))
 
