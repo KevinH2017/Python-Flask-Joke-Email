@@ -40,7 +40,6 @@ def index():
 
 @app.route('/success', methods=["POST"])  
 def verify():  
-    """Sends email with verify link"""
     email = request.form["email"]
     send_email(email)
 
