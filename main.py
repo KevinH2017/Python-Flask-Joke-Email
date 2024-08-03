@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 app.config.update(dict(
     SECRET_KEY = os.urandom(12),
-    SQLALCHEMY_DATABASE_URI = f"sqlite:///{app.root_path}/instance/email.db",
     MAIL_SERVER = "smtp.gmail.com",
     MAIL_PORT = 587,
     MAIL_USE_SSL = False,
