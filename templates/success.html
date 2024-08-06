@@ -7,16 +7,29 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <title>Success</title>
+    <style>
+        .border {
+            border: 15px solid green !important;
+            box-sizing: border-box;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 50px;
+
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="text-center mt-4 alert alert-success">Successfully sent email!</h1>
-        <br>
-        <h3 class="text-center mt-4">Please check your email for a joke!</h3>
+    <div class="container" style="padding-top: 10%">
+        <div class="border">
+            <h1 class="text-center mt-4 alert alert-success">Email sent Successfully!</h1>
+            <br>
+            <h3 class="text-center mt-4">Please check your email for a joke!</h3> 
+            <br>
+            <br>
+            <a href="http://127.0.0.1:5001">
+                <button class="btn btn-secondary mb-4">Back</button>
+            </a>
+        </div>
     </div>
-    <br>
-    <a href="http://127.0.0.1:5001">
-        <button>Back</button>
-    </a>
 </body>
 </html>
